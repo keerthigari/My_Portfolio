@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./info/styles.css" />
+    <link rel="stylesheet" href="./info/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Shivani Keerthigari</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#recognitions">Recognitions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Shivani Keerthigari</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#recognitions" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./info/shivani.jpg" alt="John Doe profile picture" class="hello" />
+      </div>
+      <div class="section__text">
+        <h4 class="section__text__p1">Hello, I'm</h4>
+        <h1 class="title">Keerthigari Shivani</h1>
+        <p class="section__text__p2">Student at Sreenidhi Institute of Science and Technology | Student Placecom Coordinator | Member of The Robotics Club SNIST</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./info/Keerthigari_Shivani_Resume_.docx.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./info/linkedin.png"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/shivani-keerthigari-795638243/'"
+            alt="My LinkedIn profile"
+          />
+          <img
+            src="./info/github.png"
+            class="icon"
+            onclick="location.href='https://github.com/keerthigari'"
+            alt="My Github profile"
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h3 class="title">About Me</h3>
+      <h3 class="title">Internship|Workshop</h3>
+      <br><br><br><br><br><br>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img class="icon" src="./info/education.png" alt="Education icon"/>
+              <h3>Education</h3>
+              <p>Bachelor of Technology<br /> Pursuing Final Year<br/> In the Stream of Computer Science</p>
+            </div>
+            <div class="details-container">
+              <img class="icon"src="./info/experience.png" alt="Experience icon"/>
+              <h3>AWS CLOUD COMPUTING, AICTE</h3>
+              <p>Worked on Cloud Computing which is on-demand delivery of computer power, database, storage and for many IT resources through a cloud services platform
+                via the internet with <br/>pay-as-you-go pricing.</p>
+            </div>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="about-details-container"> -->
+          <div class="about-containers">
+            <div class="details-container">
+              <img class="icon"src="./info/experience.png" alt="Experience icon"/>
+              <h3>AIML VIRTUAL INTERNSHIP PROGRAM, AICTE</h3>
+              <p>Worked on how amazon uses Machine Learning algorithms to analyze customer behavior, browsing history and purchase history to provide product
+                recommendations</p>
+            </div>
+            <div class="details-container">
+              <img class="icon" src="./info/experience.png" alt="Education icon"/>
+              <h3>Artificial Intelligence, <br/>Rinex Technologies Training</h3>
+              <p>I had successfully completed Artificial Intelligence program at Rinex Associated with IIT Roorkee</p>
+            </div>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img class="icon" src="./info/education.png" alt="Education icon"/>
+              <h3>IOT Workshop</h3>
+              <p>Organized by: | Date:
+                IOT workshop conducted by The Robotics Club SNIST, where I learnt IOT concepts from basic to advance level with complete hands-on training and hardware
+                kit</p>
+            </div>
+            <div class="details-container">
+              <img class="icon"src="./info/education.png" alt="Experience icon"/>
+              <h3>The Robotics Club - SNIST - Role: Volunteer | Cause: Education</h3>
+              <p>Roboveda is the technical annual fest of SNIST organized by The Robotics Club and is now officially certified under ISO standard. Worked as volunteer for
+                Roboveda'22 currently an active member in the club.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./info/checkmark.png"alt="Arrow icon"class="icon arrow"onclick="location.href='./#experience'"/>
+    </section>
+
+    <br><br><br><br><br><br>
+    <section id="experience">
+      <br/><br><br><br><br><br><br><br><br>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <!-- <h2 class="experience-sub-title">Frontend Development</h2> -->
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Java Programming</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3> JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <!-- <h2 class="experience-sub-title">Backend Development</h2> -->
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Python Programming</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="./info/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Data Structures</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./info/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        alt=""
+      />
+    </section>
+    <br><br><br><br><br><br>
+    <section id="recognitions">
+      <p class="section__text__p1">My Achievements</p>
+      <h3 class="title">Recognitions</h3>
+      <br><br><br><br><br><br>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img class="icon" src="./info/education.png" alt="Education icon"/>
+              <h3>Technical Paper Presentation | CBIT College</h3>
+              <p>Awarded as Best Paper Award during "Sudhee 2023" conducted by Chaitanya Bharathi Institute of Technology.</p>
+            </div>
+            <div class="details-container">
+              <img class="icon"src="./info/experience.png" alt="Experience icon"/>
+              <h3>Problem Solving Through Programming C | NPTEL SWAYAM</h3>
+              <p>Awarded Elite + Silver for successfully completing the course Problem Solving through Programming in C with a consolidated score of 78%.</p>
+            </div>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img class="icon"src="./info/experience.png" alt="Experience icon"/>
+              <h3>Pradarshan | Anurag University</h3>
+              <p>Secured first prize during Daksha 2k23 event conducted by Anurag University</p>
+            </div>
+            <div class="details-container">
+              <img class="icon" src="./info/experience.png" alt="Education icon"/>
+              <h3>Paper Poster Presentation | Electronics Club - SNIST</h3>
+              <p>Secured First Prize in Paper Poster Presentation based on my project Rakshana.</p>
+            </div>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img class="icon"src="./info/experience.png" alt="Experience icon"/>
+              <h3>Star Techies Hackathon-2023</h3>
+              <p>Participated in Hackathon conducted by Sreenidhi Institute of Science and Technology by the department of Computer Science on the topic of E-Adoption of a
+                child website.And secured Third Prize</p>
+            </div>
+            <div class="details-container">
+              <img class="icon" src="./info/experience.png" alt="Education icon"/>
+              <h3>Stackathon</h3>
+              <p>Awarded consolation prize in Stackathon conducted in SNIST by Coign company.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <img src="./info/checkmark.png"alt="Arrow icon"class="icon arrow"onclick="location.href='./#experience'"/>
+    </section>
+
+
+    <br/><br><br><br><br><br><br><br>
+    <section id="projects">
+      <br><br>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                src="./info/Rakshana.jpg"
+                alt="project-1"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">RAKSHANA - Ambulance Tracking and Patient Monitoring System  Medical and IOT</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/keerthigari/RAKSHANA_';"
+              >
+                GitHub
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.linkedin.com/in/shivani-keerthigari-795638243/';"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                src="./info/sahara.png"
+                alt="project-1"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SAHARA : E-Adoption <br>of a Child  <br/>Social Service and Web Development</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/keerthigari/E-Adoption-of-a-child-SNIST';"
+              >
+                GitHub
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.linkedin.com/in/shivani-keerthigari-795638243/';"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                src="./info/lung.jpg"
+                alt="project-1"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Lung Disease Classification using X-Ray Images - Machine Learning </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/keerthigari/Lung_Disease_Classification_Using_X-Ray_Images';"
+              >
+                GitHub
+              <!-- </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.linkedin.com/in/shivani-keerthigari-795638243/';"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./info/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        alt=""
+      />
+    </section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./info/email.png"
+            class="icon contact-icon"
+            alt="Email icon"
+          />
+          <p><a href="mmailto:keerthigari.shivani@gmail.com">keerthigari.shivani@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./info/email.png"
+            class="icon contact-icon"
+            alt="Email icon"
+          />
+          <p><a href="https://www.linkedin.com/in/shivani-keerthigari-795638243/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recognitions">Recognitions</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="./info/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthigari Shivani Portfolio Website</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <!-- <link href="./info/styles.css" rel="stylesheet"> -->
+<!-- </head> --> -->
+<!-- <body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me!</h3>
+            <h1>Keerthigari Shivani</h1>
+            <h3>And I'am a Web Developer</h3>
+            <p>Seeking a beginner role to enhance adn explore my Technical Knowledge gained till now.</p>
+            <div class="home-sci">
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html> -->
